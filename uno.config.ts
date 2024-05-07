@@ -1,6 +1,6 @@
 import presetWeapp from 'unocss-preset-weapp'
 import { extractorAttributify, transformerClass } from 'unocss-preset-weapp/transformer'
-import { presetIcons, presetUno, presetAttributify } from 'unocss'
+import { presetAttributify, presetIcons, presetUno } from 'unocss'
 
 import transformerDirectives from '@unocss/transformer-directives'
 

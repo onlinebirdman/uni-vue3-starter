@@ -1,15 +1,3 @@
-<template>
-  <view class="content">
-    <view class="grid grid-cols-3 justify-items-center">
-      <view
-        v-for="(item, index) in list" :key="index" class="w-200 h-200 shadow-md center rounded-md"
-      >
-        {{ item.name }}
-      </view>
-    </view>
-  </view>
-</template>
-
 <script setup lang="ts">
 import { ref } from 'vue'
 
@@ -42,6 +30,18 @@ function to(to: string) {
 const loading = ref(false)
 const title = ref('Hello')
 </script>
+
+<template>
+  <view class="content">
+    <view class="grid grid-cols-3 justify-items-center">
+      <view
+        v-for="(item, index) in list" :key="index" class="rounded-md shadow-md center h-200 w-200"
+      >
+        {{ item.name }}
+      </view>
+    </view>
+  </view>
+</template>
 
 <style>
 .content {
