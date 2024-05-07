@@ -20,19 +20,10 @@ const list = [
   { name: 'apply', path: '/pages/apply/index' },
   { name: 'icon', path: '/pages/icon/index' },
 ]
-
-function to(to: string) {
-  uni.navigateTo({
-    url: to,
-  })
-}
-
-const loading = ref(false)
-const title = ref('Hello')
 </script>
 
 <template>
-  <view class="content">
+  <view class="img-bg content">
     <view class="grid grid-cols-3 justify-items-center">
       <view
         v-for="(item, index) in list" :key="index" class="rounded-md shadow-md center h-200 w-200"
