@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { API } from '@/api'
 
 const list = [
   { name: 'font', path: '/pages/font/index' },
@@ -20,6 +20,7 @@ const list = [
   { name: 'apply', path: '/pages/apply/index' },
   { name: 'icon', path: '/pages/icon/index' },
 ]
+API.home.page.request()
 </script>
 
 <template>
